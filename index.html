@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4 - Storms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="hour_graph">
+            <div id="my_dataviz" style="margin: 0 auto; height: 640px; width: 680px; "></div>
+        </div>
+        <div id="graph_1">
+            <div id="scatter_plot" style="margin: 0 auto; height: 640px; width: 680px; border: 1px solid #777;"></div>
+        </div>
+        <div id="countGraph">
+            <div id="chart" style="margin: 0 auto; height: 640px; width: 680px;"></div>
+        </div>
+        <div id="graph">
+            <div id="map" style="margin: 0 auto; height: 640px; width: 680px; border: 1px solid #777;"></div>
+        </div>
+        <div id='sections'>
+            <div>
+                <h3>Storms over Time</h3>
+                Storms, as an atmospheric events, have the formidable power of affecting the surface and strongly implying severe weather. They have the potential to harm lives and property in storm surges, heavy rain or snow causing flooding, and plenty of other natural hazards. Hence, learning more about this dangerous enemy to find its pattern over time could be a guarder for human activities and better living protection in experientialism. For example, is it getting a higher probability of happening in our world?
+                <br>
+                <br>
+                Unfortunately, the answer is positive. From 1975 to 2020, we see there is an apparent observation of increment of storms number over time. 
+                <br><br>
+                Therefore, focusing on the changes in more detailed features could be more effective for us to know this beast.
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <div>
+                <h3>Where the Storms are Hitting</h3>
+                We see that there are more storms every year, but where exactly are they hitting?
+                <br><br>
+                The map here shows the locations of every storm from 1975 to 2020. The color represents the year of the storm, and the size represents the category. Storms that are of category -1 or category 0 do not count as hurricanes.
+                We can see where these storms are reaching. They get sparser as you go farther north or farther east. However, if we break it down by year, this actually changes.
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <div>
+                <h3>Let's consider...</h3>
+                <h4>Storms from 1975 to 1990</h4>
+                Here are all the storms from before 1990, as well as the blue path which represents the average path traveled by these storms. This path was calculated by averaging the longtitude and lattitudes of the starting and ending points of the storms, and the storms in-between. Unsurprisingly, most of these storms are centered in the middle of the ocean.
+                <br><br>
+                Storms are fairly sparse when you go farther out though, unlike the density we saw in our previous map. Let's go farther in time.
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <div>
+                <h3>Here we can see the</h3>
+                <h4>Storms from 1990 to 2000</h4>
+                In this ten year period, we already see an uptick of storms compared the period from 1975 to 1990, despite it being only ten years versus a 15 year period. Our storms are also moving farther east, and starting farther south.
+                <br><br>
+                Scroll between the graphs to see the difference.
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <div>
+                <h3>As we move farther into the future,</h3>
+                <h4>we now show the storms from 2000 to 2010.</h4>
+                <br><br>
+                From before, the blue line represents storms from 1975 to 1990. The green line represents storms from 1990 to 2000. Our new purple line moves west a bit, skewed by the storms hitting in the Gulf of Mexico.
+                But we do see an increase of storms in general. There is more density on this map than before. And these storms in the gulf are hitting land masses, causing destruction to places we live.
+                <br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <div>
+                <h3>Finally, we reach present day.</h3>
+                <h4>Storms after 2010</h4>
+                These storms spread out much farther than the storms before. They go more eastward than the storms we saw from 1975 to 1990 (represented with the blue line). There are also more of them in general. 2020 showed the most amount of storms in a single year since we began recording in 1975.
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <div>
+                <h3>How the Hurricanes Grow</h3>
+                In addition to observing overall trends and patterns of different features of all types of storms, it might also be valuable to narrow down our focus and look at one specific storm type. There might be hidden trends or patterns that won’t show on the large scope analysis. Therefore, here, we focus on hurricanes, which is one of the most violent storms, to observe their trends over their whole duration. We have found interesting patterns in the changes of their sizes.
+                <br><br>
+                The trend of the average size of hurricanes over the hours is plotted. As shown in the graph, the average size of hurricanes tends to reach the maximum value around <b>6 to 8</b> hours after the beginning of the hurricane. The maximum average size goes up to <b>189.9</b> nautical miles (diameter), which is around the 7th hour.                <br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+<script src="http://d3js.org/d3.v5.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+<script src="https://elfalem.github.io/Leaflet.curve/src/leaflet.curve.js"></script>
+<script src="./d3-tip.js"></script>
+<script src="graph-scroll.js"></script>
+<script src="./main.js"></script>
+</html>

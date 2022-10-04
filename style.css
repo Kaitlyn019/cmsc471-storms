@@ -1,0 +1,64 @@
+label.btn.btn-secondary,
+label.btn.btn-secondary:focus,
+label.btn.btn-secondary:active,
+label.btn.btn-secondary.active,
+label.btn.btn-secondary.active:focus,
+label.btn.btn-secondary.active:active {
+    box-shadow: none !important;
+}
+
+body {
+    font-family: "Open Sans";
+    margin: 0;
+    max-width: 100%;
+}
+
+#main {
+    margin: 20px;
+    position: relative;
+}
+  
+#sections{
+   width: 25%;
+}
+
+#graph{
+    margin-right: calc(100%-500px);
+    width: 75%;
+    position: sticky;
+    top: 0px;
+    float: right;
+}
+
+#graph_1{
+    margin-right: calc(100%-500px);
+    width: 75%;
+    position: sticky;
+    top: 0px;
+    float: right;
+}
+
+#hour_graph{
+    margin-right: calc(100%-500px);
+    width: 75%;
+    position: sticky;
+    top: 0px;
+    float: right;
+}
+
+#countGraph{
+    margin-right: calc(100%-500px);
+    width: 75%;
+    position: sticky;
+    top: 0px;
+    float: right;
+}
+
+#sections > div{
+	opacity: .3;
+    margin-bottom: 200px;
+} 
+
+#sections div.graph-scroll-active{
+	opacity: 1;
+}
